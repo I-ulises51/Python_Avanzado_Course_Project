@@ -1,4 +1,4 @@
-# Flask-API-Template
+# Flask-API-Template - with Customer Classify
 
 API template made with Flask for reusable assets
 
@@ -25,8 +25,15 @@ The application will be listening on port 5001
 The available routes are:
 
 [/](http://0.0.0.0:5001) -> It returns a welcome message <br />
-[/users](http://0.0.0.0:5001/users) -> It returns a list of dummy users <br />
-[/ocr](http://0.0.0.0:5001/ocr) -> Will process the PDF document, in the url <br />
+[/users](http://0.0.0.0:5001/status) -> It returns a list of dummy users <br />
+[/ocr](http://0.0.0.0:5001/Customer_classify/Classifier/<file_name>) -> file used: marketing_campaign <br />
+
+
+Customer Classify Changes: 
+
+  - ./app/routes/Customer_classify
+  - ./app/services/Customer_classify
+  - ./app/__init__.py
 
 For stopping the server, please press **Ctrl** + **C**
 
